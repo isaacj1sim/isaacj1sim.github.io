@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Add New Article</h1>
+        <form>
+            <div class="form-group">
+                <label for="article_title">Article Title</label>
+                <input type="text" class="form-control" id="article_title" aria-describedby="title" placeholder="Title">
+                <label for="article_author">Article Author</label>
+                <input type="text" class="form-control" id="article_author" aria-describedby="author" placeholder="Author">
+                <div class="row">
+                    <div class="col">
+                        <p>Upload Files:</p>
+                    </div>
+                    <div class="col">
+                        <p>Pages:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="file" id="myFile" name="filename">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Academics
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Math</a>
+                                <a class="dropdown-item" href="#">Humanities</a>
+                                <a class="dropdown-item" href="#">Science</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label for="article_text">Article Text</label>
+                <br>
+                <textarea rows="15" cols="80"></textarea>
+                <div class="row">
+                    <div class="col">
+                        <label for="tags">Select Tags</label>
+                    </div>
+                    <div class="col">
+                        <label for="visibility">Visibility</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineTag1" value="tag1">
+                            <label class="form-check-label" for="inlineTag1">Python</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineTag2" value="tag2">
+                            <label class="form-check-label" for="inlineTag2">C</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineTag3" value="tag3">
+                            <label class="form-check-label" for="inlineTag3">Java</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineTag4" value="tag4">
+                            <label class="form-check-label" for="inlineTag4">Scala</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineTag5" value="tag5">
+                            <label class="form-check-label" for="inlineTag5">Perl</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="visible1" value="yes">
+                            <label class="form-check-label" for="visible1">Visible</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="visible2" value="no">
+                                <label class="form-check-label" for="visible1">Invisible</label>
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <label for="login">Login to Finish Submitting</label>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me"> Remember me | 
+                        </label>
+                            <a href="">Forgot Password?</a>
+                      </div>
+                      <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
